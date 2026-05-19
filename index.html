@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cotaskaは、ローカルPCでタスクをMarkdownファイルとして管理し、人とAIエージェントが同じタスク情報を扱えるデスクトップタスク管理アプリです。">
+    <meta property="og:title" content="Cotaska - ローカル完結型タスク管理アプリ">
+    <meta property="og:description" content="人にもAIにも読みやすい、Markdownベースのデスクトップタスク管理。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/cotaska-logo.png">
+    <title>Cotaska - ローカル完結型タスク管理アプリ</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Cotaska top">
+        <img src="assets/cotaska-logo.png" alt="Cotaska">
+      </a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="#features">特徴</a>
+        <a href="#workflow">使い方</a>
+        <a href="#download">公開予定</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__copy">
+          <p class="eyebrow">Local first task manager for humans and AI agents</p>
+          <h1>Cotaska</h1>
+          <p class="lead">
+            Cotaskaは、ローカルPC上でタスクを整理しながら、AIエージェントとも同じタスク情報を共有しやすくするデスクトップタスク管理アプリです。
+          </p>
+          <div class="hero__actions" aria-label="主要アクション">
+            <a class="button button--primary" href="#download">公開予定を見る</a>
+            <a class="button button--ghost" href="#features">特徴を読む</a>
+          </div>
+        </div>
+
+        <div class="product-shot" aria-label="Cotaskaの画面イメージ">
+          <div class="window-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="app-shell">
+            <aside class="rail">
+              <div class="rail__item active"></div>
+              <div class="rail__item"></div>
+              <div class="rail__item"></div>
+              <div class="rail__item"></div>
+            </aside>
+            <section class="side-pane">
+              <p class="pane-label">ビュー</p>
+              <button class="view active">今日</button>
+              <button class="view">明日</button>
+              <button class="view">次の7日間</button>
+              <p class="pane-label">リスト</p>
+              <button class="view">Cotaska</button>
+              <button class="view">仕様変更</button>
+            </section>
+            <section class="task-pane">
+              <div class="quick-add">タスクをすばやく追加</div>
+              <article class="task done">
+                <span class="check"></span>
+                <div>
+                  <strong>GitHub Pages用サイトを作成</strong>
+                  <small>完了 / Cotaska</small>
+                </div>
+              </article>
+              <article class="task">
+                <span class="check"></span>
+                <div>
+                  <strong>公開ページの文章を調整</strong>
+                  <small>進行中 / 仕様変更</small>
+                </div>
+              </article>
+              <article class="task">
+                <span class="check"></span>
+                <div>
+                  <strong>リリース導線を整理</strong>
+                  <small>未着手 / Cotaska</small>
+                </div>
+              </article>
+            </section>
+            <section class="detail-pane">
+              <p class="pane-label">Markdownメモ</p>
+              <h2>AIと共有しやすいタスク</h2>
+              <p>タスク本文はMarkdownとして保存。人が読めて、AIも扱いやすい形式です。</p>
+              <div class="metadata">
+                <span>priority: medium</span>
+                <span>status: doing</span>
+                <span>list: Cotaska</span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div>
+          <p class="eyebrow">Why Cotaska</p>
+          <h2>タスク管理を、アプリの中だけに閉じ込めない。</h2>
+        </div>
+        <p>
+          Cotaskaは、タスクの本体を個別のMarkdownファイルとして保存します。アプリから操作できるだけでなく、開発者やAIエージェントがファイルとして直接読み書きしやすい構造を目指しています。
+        </p>
+      </section>
+
+      <section id="features" class="section feature-grid">
+        <article>
+          <span class="feature-number">01</span>
+          <h3>ローカル完結</h3>
+          <p>タスクデータはローカルPC上に保存。クラウド前提ではないため、個人利用や小規模チームの作業環境に合わせやすい設計です。</p>
+        </article>
+        <article>
+          <span class="feature-number">02</span>
+          <h3>Markdownが正本</h3>
+          <p>タスクは `data/tasks/T-XXXX.md` 形式で管理。本文とYAML frontmatterにより、説明・状態・期限・リストをひとつのファイルにまとめます。</p>
+        </article>
+        <article>
+          <span class="feature-number">03</span>
+          <h3>AIエージェント連携を前提</h3>
+          <p>人間のUI操作とAIによるファイル編集の両方を想定。タスクの抽出、更新、進捗整理をAIが支援しやすい構成です。</p>
+        </article>
+        <article>
+          <span class="feature-number">04</span>
+          <h3>日常作業に近い操作感</h3>
+          <p>今日・明日・次の7日間・リスト・完了・ごみ箱などのビューで、日々のタスクをすばやく確認できます。</p>
+        </article>
+      </section>
+
+      <section id="workflow" class="section workflow">
+        <div class="workflow__copy">
+          <p class="eyebrow">Workflow</p>
+          <h2>登録、整理、詳細メモまでひとつの画面で。</h2>
+          <p>
+            4カラム構成の画面で、ビュー切り替え、タスク一覧、詳細編集を行います。詳細ペインではMarkdown編集とプレビューを使い分けられます。
+          </p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span>1</span>
+            <p>クイック追加でタスクを登録</p>
+          </div>
+          <div class="step">
+            <span>2</span>
+            <p>期限、優先度、リスト、進捗を整理</p>
+          </div>
+          <div class="step">
+            <span>3</span>
+            <p>Markdownメモに作業内容を残す</p>
+          </div>
+          <div class="step">
+            <span>4</span>
+            <p>AIエージェントと同じタスクファイルを共有</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section data-model">
+        <div>
+          <p class="eyebrow">Data model</p>
+          <h2>読みやすく、追跡しやすいファイル構成。</h2>
+        </div>
+        <pre><code>data/
+  tasks/
+    T-0001.md
+    T-0002.md
+    _index.yaml
+  archive/
+  lists.yaml</code></pre>
+      </section>
+
+      <section id="download" class="section download">
+        <div>
+          <p class="eyebrow">Release</p>
+          <h2>公開準備中</h2>
+          <p>
+            CotaskaはWindows向けデスクトップアプリとして開発中です。配布ページやGitHub Releasesへの導線は、公開準備が整い次第このページに追加します。
+          </p>
+        </div>
+        <a class="button button--primary" href="https://github.com/csho10051/Agent_Cotaska" rel="noreferrer">GitHubリポジトリを見る</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Cotaska</p>
+      <a href="#top">ページ上部へ</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
