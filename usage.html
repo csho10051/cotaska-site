@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cotaskaの使い方。AIにタスクを整理してもらう、AIへの作業指示に使う、メールからタスクを追加してもらう流れを紹介します。">
+    <meta property="og:title" content="Cotaska 使い方">
+    <meta property="og:description" content="人とAIが同じタスクを見ながら作業を進めるためのCotaska活用例。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/cotaska-logo.png">
+    <title>Cotaska 使い方</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Cotaska">
+        <img src="assets/cotaska-logo.png" alt="Cotaska">
+      </a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a href="index.html#concept">コンセプト</a>
+        <a href="index.html#features">特徴</a>
+        <a href="usage.html">使い方</a>
+        <a href="download.html">ダウンロード</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section usage-hero">
+        <div class="section-heading">
+          <p class="eyebrow">Usage</p>
+          <h1>Cotaskaを、AIとの作業の共通タスクにする。</h1>
+          <p class="lead">
+            Cotaskaは、やりたいことをタスクとして残し、AIに整理・分解・実行・追加を頼むための作業場所です。
+            人が見ているタスクを基準に、AIへ次の作業を依頼できます。
+          </p>
+        </div>
+      </section>
+
+      <section class="section usage-flow">
+        <article class="usage-step">
+          <span class="feature-number">01</span>
+          <div>
+            <p class="eyebrow">Organize</p>
+            <h2>あいまいなやりたいことを、AIに整理してもらう。</h2>
+            <p>
+              まだ具体化できていないアイデアや作業を、まずCotaskaにタスクとして残します。
+              そのタスクをAIに読ませることで、目的、背景、必要な作業、確認事項を整理してもらえます。
+            </p>
+            <figure class="usage-image">
+              <img src="assets/usage-organize.png" alt="あいまいな依頼をAIが整理してCotaskaのタスクへ分解するイメージ">
+            </figure>
+            <div class="usage-visual usage-visual--organize" aria-label="あいまいな作業をAIに整理してもらうイメージ">
+              <div class="visual-card visual-card--note">
+                <span>Human</span>
+                <strong>ざっくりした依頼</strong>
+                <p>やりたいことだけを書く</p>
+              </div>
+              <div class="visual-arrow"></div>
+              <div class="visual-card visual-card--task">
+                <span>Cotaska</span>
+                <strong>タスク化</strong>
+                <p>目的・背景・状態を残す</p>
+              </div>
+              <div class="visual-arrow"></div>
+              <div class="visual-card visual-card--ai">
+                <span>AI</span>
+                <strong>具体化・分解</strong>
+                <p>作業単位に整える</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="usage-step">
+          <span class="feature-number">02</span>
+          <div>
+            <p class="eyebrow">Request</p>
+            <h2>整理されたタスクを、AIへの作業指示に使う。</h2>
+            <p>
+              AIに整理してもらったタスクは、そのまま次の作業指示の元ネタになります。
+              人が見ているタスクと同じ情報をAIに渡せるため、設計書作成や実装依頼の前提をそろえやすくなります。
+            </p>
+            <figure class="usage-image">
+              <img src="assets/usage-request.png" alt="CotaskaのタスクをAIへの設計や実装の指示に使うイメージ">
+            </figure>
+            <div class="usage-visual usage-visual--request" aria-label="タスクをAIへの作業指示に使うイメージ">
+              <div class="visual-card visual-card--task">
+                <span>Cotaska</span>
+                <strong>整理済みタスク</strong>
+                <p>要件・完了条件・メモ</p>
+              </div>
+              <div class="visual-arrow"></div>
+              <div class="visual-card visual-card--ai">
+                <span>AI</span>
+                <strong>設計・実装</strong>
+                <p>同じ前提で作業する</p>
+              </div>
+              <div class="visual-arrow"></div>
+              <div class="visual-card visual-card--result">
+                <span>Result</span>
+                <strong>成果物</strong>
+                <p>設計書・実装・確認結果</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="usage-step">
+          <span class="feature-number">03</span>
+          <div>
+            <p class="eyebrow">Add</p>
+            <h2>メールやOutlookの内容を、AIにタスク化してもらう。</h2>
+            <p>
+              メール、Outlook、メモなどに散らばった依頼や予定を、AIに整理してもらい、Cotaskaのタスクとして追加できます。
+              やることを会話ログやメールの中に埋もれさせず、タスクとして一元管理できます。
+            </p>
+            <figure class="usage-image">
+              <img src="assets/usage-add.png" alt="メールやOutlookの内容をAIが整理してCotaskaのタスクへ追加するイメージ">
+            </figure>
+            <div class="usage-visual usage-visual--add" aria-label="メールなどの内容をAIにタスク化してもらうイメージ">
+              <div class="visual-card visual-card--mail">
+                <span>Mail</span>
+                <strong>依頼・予定</strong>
+                <p>メールやOutlookの情報</p>
+              </div>
+              <div class="visual-arrow"></div>
+              <div class="visual-card visual-card--ai">
+                <span>AI</span>
+                <strong>抽出・整理</strong>
+                <p>対応が必要なことを選ぶ</p>
+              </div>
+              <div class="visual-arrow"></div>
+              <div class="visual-card visual-card--task">
+                <span>Cotaska</span>
+                <strong>タスク追加</strong>
+                <p>期限や優先度も候補化</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="usage-step">
+          <span class="feature-number">04</span>
+          <div>
+            <p class="eyebrow">Expand</p>
+            <h2>タスク化した内容を、ほかの場所へ展開する。</h2>
+            <p>
+              Cotaskaにタスクとして残した内容は、AIに整理してもらうことで、Obsidianのメモ、Gitの作業ログ、設計メモなどへ展開しやすくなります。
+              これはCotaska単体の直接連携ではなく、AIに渡しやすいタスク情報として残しておくことで広がる使い方です。
+            </p>
+            <figure class="usage-image">
+              <img src="assets/usage-expand.png" alt="Cotaskaのタスク内容をAIが整理して外部のメモや作業ログへ展開するイメージ">
+            </figure>
+            <div class="usage-visual usage-visual--expand" aria-label="タスク化した内容をほかの場所へ展開するイメージ">
+              <div class="visual-card visual-card--task">
+                <span>Cotaska</span>
+                <strong>作業の正本</strong>
+                <p>タスクとして残す</p>
+              </div>
+              <div class="visual-arrow"></div>
+              <div class="visual-card visual-card--ai">
+                <span>AI</span>
+                <strong>用途別に整理</strong>
+                <p>メモやログ向けに変換</p>
+              </div>
+              <div class="visual-arrow"></div>
+              <div class="visual-card visual-card--external">
+                <span>External</span>
+                <strong>ほかの場所へ</strong>
+                <p>Obsidian・Git・設計メモ</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section usage-summary">
+        <div class="section-heading">
+          <p class="eyebrow">Workflow</p>
+          <h2>タスクを中心に、AIとの作業をつなげる。</h2>
+        </div>
+        <div class="summary-grid">
+          <article>
+            <h3>人が残す</h3>
+            <p>やりたいこと、困っていること、受け取った依頼をタスクとして残します。</p>
+          </article>
+          <article>
+            <h3>AIが整理する</h3>
+            <p>タスクを読み、目的、作業単位、確認事項、次の行動に分解します。</p>
+          </article>
+          <article>
+            <h3>人とAIで進める</h3>
+            <p>同じタスクを見ながら、設計、実装、確認、記録へ進めます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section download">
+        <div>
+          <p class="eyebrow">Try Cotaska</p>
+          <h2>まずはポータブル版で試せます。</h2>
+          <p>ZIPを展開して Cotaska.exe を起動すると、そのまま使い始められます。</p>
+        </div>
+        <a class="button button--primary" href="download.html">ダウンロードページへ</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Cotaska</p>
+      <a href="index.html">トップへ戻る</a>
+    </footer>
+  </body>
+</html>
